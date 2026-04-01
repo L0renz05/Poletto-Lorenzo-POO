@@ -1,0 +1,70 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2868
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red251\green0\blue7;\red0\green0\blue0;\red255\green255\blue255;
+\red24\green24\blue23;\red93\green169\blue233;\red203\green203\blue189;\red83\green130\blue54;\red191\green120\blue84;
+\red203\green203\blue189;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c12195\c0;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000\c0;
+\cssrgb\c12689\c12676\c11977;\cssrgb\c43227\c72479\c93066;\cssrgb\c83504\c83419\c78818;\cssrgb\c39181\c57249\c27278;\cssrgb\c79901\c54660\c40330;
+\cssrgb\c83369\c83292\c78899;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww29700\viewh18640\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Root: Plebe026\
+Usuario Lolo: 05lolo     \
+	\cf2    
+\f1 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 ssh lolo@161.97.92.143\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf4 \cb5 \AppleHighlight-1 \strokec6 services\cb5 \strokec7 :\cb1 \strokec7 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb5 \strokec7   \cb5 \strokec8 # 1. LA BASE DE DATOS\cb1 \strokec7 \
+\cb5 \strokec7   \cb5 \strokec6 db\cb5 \strokec7 :\cb1 \strokec7 \
+\cb5 \strokec7     \cb5 \strokec6 image\cb5 \strokec7 : \cb5 \strokec9 mysql:8.0\cb1 \strokec7 \
+\cb5 \strokec7     \cb5 \strokec6 container_name\cb5 \strokec7 : \cb5 \strokec9 alcancIA_mysql\cb1 \strokec7 \
+\cb5 \strokec7     \cb5 \strokec6 restart\cb5 \strokec7 : \cb5 \strokec9 always\cb1 \strokec7 \
+\cb5 \strokec7     \cb5 \strokec6 environment\cb5 \strokec7 :\cb1 \strokec7 \
+\cb5 \strokec7       \cb5 \strokec6 MYSQL_ROOT_PASSWORD\cb5 \strokec7 : \cb5 \strokec9 "RootPlebe2026."\cb1 \strokec7 \
+\cb5 \strokec7       \cb5 \strokec6 MYSQL_DATABASE\cb5 \strokec7 : \cb5 \strokec9 tasty_alcancIA\cb1 \strokec7 \
+\cb5 \strokec7       \cb5 \strokec6 MYSQL_USER\cb5 \strokec7 : \cb5 \strokec9 lolo\cb1 \strokec7 \
+\cb5 \strokec7       \cb5 \strokec6 MYSQL_PASSWORD\cb5 \strokec7 : \cb5 \strokec9 "Plebe2026."\cb1 \strokec7 \
+\cb5 \strokec7     \cb5 \strokec6 ports\cb5 \strokec7 :\cb1 \strokec7 \
+\cb5 \strokec7       - \cb5 \strokec9 "3306:3306"\cb1 \strokec7 \
+\cb5 \strokec7     \cb5 \strokec6 volumes\cb5 \strokec7 :\cb1 \strokec7 \
+\cb5 \strokec7       - \cb5 \strokec9 db_data:/var/lib/mysql\cb1 \strokec7 \
+\
+\cb5 \strokec7   \cb5 \strokec8 # 2. EL PANEL VISUAL DE LA BASE DE DATOS\cb1 \strokec7 \
+\cb5 \strokec7   \cb5 \strokec6 phpmyadmin\cb5 \strokec7 :\cb1 \strokec7 \
+\cb5 \strokec7     \cb5 \strokec6 image\cb5 \strokec7 : \cb5 \strokec9 phpmyadmin/phpmyadmin\cb1 \strokec7 \
+\cb5 \strokec7     \cb5 \strokec6 container_name\cb5 \strokec7 : \cb5 \strokec9 alcancIA_phpmyadmin\cb1 \strokec7 \
+\cb5 \strokec7     \cb5 \strokec6 restart\cb5 \strokec7 : \cb5 \strokec9 always\cb1 \strokec7 \
+\cb5 \strokec7     \cb5 \strokec6 environment\cb5 \strokec7 :\cb1 \strokec7 \
+\cb5 \strokec7       \cb5 \strokec6 PMA_HOST\cb5 \strokec7 : \cb5 \strokec9 db\cb1 \strokec7 \
+\cb5 \strokec7       \cb5 \strokec6 MYSQL_ROOT_PASSWORD\cb5 \strokec7 : \cb5 \strokec9 "RootPlebe2026."\cb1 \strokec7 \
+\cb5 \strokec7     \cb5 \strokec6 ports\cb5 \strokec7 :\cb1 \strokec7 \
+\cb5 \strokec7       - \cb5 \strokec9 "8080:80"\cb1 \strokec7 \
+\cb5 \strokec7     \cb5 \strokec6 depends_on\cb5 \strokec7 :\cb1 \strokec7 \
+\cb5 \strokec7       - \cb5 \strokec9 db\cb1 \strokec7 \
+\
+\cb5 \strokec7   \cb5 \strokec8 # 3. EL CEREBRO (FASTAPI)\cb1 \strokec7 \
+\cb5 \strokec7   \cb5 \strokec6 api\cb5 \strokec7 :\cb1 \strokec7 \
+\cb5 \strokec7     \cb5 \strokec6 image\cb5 \strokec7 : \cb5 \strokec9 tiangolo/uvicorn-gunicorn-fastapi:python3.11\cb1 \strokec7 \
+\cb5 \strokec7     \cb5 \strokec6 container_name\cb5 \strokec7 : \cb5 \strokec9 alcancIA_fastapi\cb1 \strokec7 \
+\cb5 \strokec7     \cb5 \strokec6 restart\cb5 \strokec7 : \cb5 \strokec9 always\cb1 \strokec7 \
+\cb5 \strokec7     \cb5 \strokec6 ports\cb5 \strokec7 :\cb1 \strokec7 \
+\cb5 \strokec7       - \cb5 \strokec9 "8000:80"\cb1 \strokec7 \
+\cb5 \strokec7     \cb5 \strokec6 volumes\cb5 \strokec7 :\cb1 \strokec7 \
+\cb5 \strokec7       - \cb5 \strokec9 .:/app\cb1 \strokec7 \
+\cb5 \strokec7     \cb5 \strokec6 command\cb5 \strokec7 : \cb5 \strokec9 uvicorn main:app --host 0.0.0.0 --port 80 --reload\cb1 \strokec7 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb5 \strokec8 # ESTO ES LO QUE FALTABA (El disco duro de la base de datos)\cb1 \strokec7 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb5 \strokec6 volumes\cb5 \strokec7 :\cb1 \strokec7 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb5 \strokec7   \cb5 \strokec6 db_data\cb5 \strokec7 :\cb1 \strokec10 \
+}
