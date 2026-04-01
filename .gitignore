@@ -1,0 +1,7 @@
+# Ignorar basura de macOS
+.DS_Store
+
+# Ignorar basura de Qt Creator
+.qtcreator/
+build/
+*.user
