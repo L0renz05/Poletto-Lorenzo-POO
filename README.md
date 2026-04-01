@@ -17,7 +17,7 @@ El objetivo principal es aplicar los conceptos de **C++** y el framework **Qt** 
 ## 📂 Estructura del Repositorio
 A continuación se detallan los proyectos desarrollados. Haz clic en cada carpeta para acceder al código fuente y a las instrucciones específicas de compilación:
 
-* 📁 **[Ejercicio01](./Ejercicio1): Gestor de Trabajos Prácticos.** Aplicación de escritorio con persistencia de datos en archivos locales (`.txt`), sistema de login seguro y gestión dinámica de la interfaz mediante grillas.
+* 📁 **[Ejercicio 01](./Ejercicio01): Gestor de Trabajos Prácticos.** Aplicación de escritorio con persistencia de datos en archivos locales (`.txt`), sistema de login seguro y gestión dinámica de la interfaz mediante grillas.
   
 * 📁 **[Ejercicio02](./Ejercicio02): Panel de Monitoreo VPS.** Dashboard interactivo estilo *Dark Mode* que consume una API REST (JSON) mediante peticiones HTTP asíncronas para visualizar métricas de un servidor remoto en tiempo real.
 
