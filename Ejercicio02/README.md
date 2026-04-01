@@ -49,4 +49,4 @@ El código aplica el principio de responsabilidad única, separando estrictament
 3. Configurar el kit de compilación correspondiente a tu sistema (Ej: *Desktop Qt... clang* para Mac).
 4. En el menú superior, ir a **Build** (Compilar) y seleccionar **Clean All**.
 5. Ir nuevamente a **Build** y seleccionar **Run qmake**.
-6. Presionar el botón ▶️ **Play** (o `Cmd + R` en Mac) para compilar y abrir el panel.
+6. Presionar el botón ▶️ **Play** para compilar y abrir el panel.
