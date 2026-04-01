@@ -1,0 +1,13 @@
+# Archivos de configuración de Qt
+*.user
+
+# Archivos invisibles de macOS
+.DS_Store
+
+# Carpetas de compilación
+build/
+debug/
+release/
+
+# Archivos de notas personales
+*.txt
