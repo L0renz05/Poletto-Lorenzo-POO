@@ -8,23 +8,23 @@
 ---
 
 ## 📖 Sobre este Repositorio
-Este espacio está destinado a almacenar, organizar y documentar todas las actividades, trabajos prácticos y proyectos desarrollados durante el cursado de la materia **Programación Orientada a Objetos**. 
-
-El objetivo principal es aplicar los conceptos de **C++** y el framework **Qt** para resolver problemas de ingeniería mediante el paradigma de objetos, abarcando desde el diseño de interfaces gráficas hasta la comunicación en red y la persistencia de datos.
+Este espacio contiene los proyectos y trabajos prácticos desarrollados durante el cursado de **Programación Orientada a Objetos**. El enfoque principal ha sido la creación de aplicaciones robustas utilizando **C++** y el framework **Qt**, integrando conceptos avanzados como persistencia de datos, comunicación con APIs REST y sistemas colaborativos en tiempo real.
 
 ---
 
 ## 📂 Estructura del Repositorio
-A continuación se detallan los proyectos desarrollados. Haz clic en cada carpeta para acceder al código fuente y a las instrucciones específicas de compilación:
+Haz clic en cada carpeta para acceder al código fuente y la documentación específica de cada ejercicio:
 
-* 📁 **[Ejercicio 01](./Ejercicio01): Gestor de Trabajos Prácticos.** Aplicación de escritorio con persistencia de datos en archivos locales (`.txt`), sistema de login seguro y gestión dinámica de la interfaz mediante grillas.
-  
-* 📁 **[Ejercicio02](./Ejercicio02): Panel de Monitoreo VPS.** Dashboard interactivo estilo *Dark Mode* que consume una API REST (JSON) mediante peticiones HTTP asíncronas para visualizar métricas de un servidor remoto en tiempo real.
+* 📁 **[Ejercicio 01](./Ejercicio01): Gestor de Trabajos Prácticos.** Aplicación de escritorio con sistema de login y gestión dinámica de materias. Utiliza archivos `.txt` para la persistencia local de datos.
+
+* 📁 **[Ejercicio 02](./Ejercicio02): Panel de Monitoreo VPS.** Dashboard interactivo que consume datos en formato JSON desde un servidor remoto. Implementa actualizaciones asíncronas para visualizar el estado de hardware de un VPS.
+
+* 📁 **[Ejercicio 03](./Ejercicio03): Lienzo Colaborativo en Tiempo Real.** Proyecto final de alta complejidad. Permite dibujo sincronizado entre múltiples usuarios sobre un lienzo compartido. Implementa suavizado **Catmull-Rom**, fusión incremental de trazos por **UUID** y un backend en **Node.js**.
 
 ---
 
-## 🛠️ Tecnologías y Herramientas Generales
-* **Lenguajes:** C++, Python (para scripts de servidor)
-* **Framework:** Qt Framework (Core, GUI, Widgets, Network)
-* **Control de Versiones:** Git & GitHub
-* **Entorno de Desarrollo:** Qt Creator / Visual Studio Code
+## 🛠️ Tecnologías y Herramientas Utilizadas
+* **Lenguajes:** C++ (Qt Framework), JavaScript (Node.js para el backend del Ejercicio 03).
+* **Librerías:** Qt Network, Qt Widgets, Express, Cors.
+* **Control de Versiones:** Git & GitHub.
+* **Entorno de Desarrollo:** Qt Creator / Visual Studio Code en macOS.
