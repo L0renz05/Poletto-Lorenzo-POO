@@ -21,7 +21,7 @@ Haz clic en cada carpeta para acceder al código fuente y la documentación espe
 
 * 📁 **[Ejercicio 03](./Ejercicio03): Lienzo Colaborativo en Tiempo Real.** Proyecto final de alta complejidad. Permite dibujo sincronizado entre múltiples usuarios sobre un lienzo compartido. Implementa suavizado **Catmull-Rom**, fusión incremental de trazos por **UUID** y un backend en **Node.js**.
 
-* 📁 **[Ejercicio 04](./Ejercicio04): Kanban Colaborativo Multiusuario. Sistema de gestión de tareas en tiempo real con arquitectura Cliente-Servidor. Implementa un CRUD completo, sincronización por polling asíncrono y una interfaz dinámica con QSS. El backend utiliza Python (FastAPI) y MySQL, todo orquestado mediante Docker en un VPS.
+* 📁 **[Ejercicio 04](./Ejercicio04): Kanban Colaborativo Multiusuario.** Sistema de gestión de tareas en tiempo real con arquitectura Cliente-Servidor. Implementa un CRUD completo, sincronización por polling asíncrono y una interfaz dinámica con QSS. El backend utiliza Python (FastAPI) y MySQL, todo orquestado mediante Docker en un VPS.
 
 ---
 
