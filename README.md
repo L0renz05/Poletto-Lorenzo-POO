@@ -23,7 +23,7 @@ Haz clic en cada carpeta para acceder al código fuente y la documentación espe
 
 * 📁 **[Ejercicio 04](./Ejercicio04): Kanban Colaborativo Multiusuario.** Sistema de gestión de tareas en tiempo real con arquitectura Cliente-Servidor. Implementa un CRUD completo, sincronización por polling asíncrono y una interfaz dinámica con QSS. El backend utiliza Python (FastAPI) y MySQL, todo orquestado mediante Docker en un VPS.
 
-* 📁 **[Ejercicio 07](./Ejercicio07): Sistema de Autenticación y Consumo de API REST. Aplicación de escritorio con login seguro y bloqueo temporal. Destaca por su sólida Arquitectura Orientada a Objetos mediante el uso de clases abstractas y polimorfismo. Implementa peticiones HTTP nativas para el clima en tiempo real, descarga y caché de imágenes de fondo, sistema de logging local y manejo de estados offline para una experiencia de usuario robusta.
+* 📁 [Ejercicio 07](./Ejercicio07): Sistema de Autenticación y Consumo de API REST. Aplicación de escritorio con login seguro y bloqueo temporal. Destaca por su sólida Arquitectura Orientada a Objetos mediante el uso de clases abstractas y polimorfismo. Implementa peticiones HTTP nativas para el clima en tiempo real, descarga y caché de imágenes de fondo, sistema de logging local y manejo de estados offline para una experiencia de usuario robusta.
 
 * 📁 **[Ejercicio 08](./Ejercicio08): Editor Multilenguaje y Análisis Sintáctico.** Aplicación avanzada de escritorio que funciona como un IDE básico para C++, Python y Java. Destaca por su arquitectura basada en polimorfismo puro y la redefinición de eventos de bajo nivel (`override` de teclado, mouse y foco). Incluye exportación a JPG, panel lateral con perfil profesional y sistema de seguridad con bloqueo temporal offline.
 
