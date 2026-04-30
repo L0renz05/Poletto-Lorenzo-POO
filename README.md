@@ -27,6 +27,8 @@ Haz clic en cada carpeta para acceder al código fuente y la documentación espe
 
 * 📁 **[Ejercicio 08](./Ejercicio08): Editor Multilenguaje y Análisis Sintáctico.** Aplicación avanzada de escritorio que funciona como un IDE básico para C++, Python y Java. Destaca por su arquitectura basada en polimorfismo puro y la redefinición de eventos de bajo nivel (`override` de teclado, mouse y foco). Incluye exportación a JPG, panel lateral con perfil profesional y sistema de seguridad con bloqueo temporal offline.
 
+* 📁 **[Ejercicio 09](./Ejercicio09): Integración de Base de Datos Local e Interfaz Gráfica.** Aplicación de escritorio que implementa un sistema de gestión interactivo conectado a una base de datos local. Destaca por su arquitectura modular que separa la lógica de presentación (UI) de la capa de persistencia de datos mediante Programación Orientada a Objetos. Incluye un sistema de autenticación con diferenciación de roles (Admin/Usuario) y navegación optimizada mediante la redefinición de eventos de teclado.
+
 ---
 
 ## 🛠️ Tecnologías y Herramientas Utilizadas
