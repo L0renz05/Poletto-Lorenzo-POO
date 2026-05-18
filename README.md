@@ -29,6 +29,8 @@ Haz clic en cada carpeta para acceder al código fuente y la documentación espe
 
 * 📁 **[Ejercicio 09](./Ejercicio09): Integración de Base de Datos Local e Interfaz Gráfica.** Aplicación de escritorio que implementa un sistema de gestión interactivo conectado a una base de datos local. Destaca por su arquitectura modular que separa la lógica de presentación (UI) de la capa de persistencia de datos mediante Programación Orientada a Objetos. Incluye un sistema de autenticación con diferenciación de roles (Admin/Usuario) y navegación optimizada mediante la redefinición de eventos de teclado.
 
+* 📁 **[Ejercicio 10](./Ejercicio10): T-Rex Extremo y Motor de Físicas 2D. Videojuego de supervivencia interactivo basado en el clásico de Chrome. Implementa un motor de físicas propio para simular saltos parabólicos con gravedad. Destaca por el uso avanzado de temporizadores (QTimer y singleShot) para generar dificultad progresiva y eventos sorpresa, detección precisa de colisiones mediante hitboxes personalizadas y una gestión robusta de la memoria dinámica dentro de una sólida arquitectura orientada a objetos. 
+
 ---
 
 ## 🛠️ Tecnologías y Herramientas Utilizadas
